@@ -72,6 +72,7 @@ body {
   background-image: url(../images/background-img.jpg);
   width: 1600px;
   margin: 0 auto;
+  width: 100%;
 }
 .lorem-ipsum-section {
   background-color: var(--background-color);
