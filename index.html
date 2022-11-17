@@ -65,7 +65,7 @@
           <div class="order-class">
             <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
             <div class="button-spacing">
-              <button type="button">Zamów usługe</button>
+              <button type="button" data-modal-open>Zamów usługe</button>
             </div>
           </div>
         </div>
@@ -428,12 +428,10 @@
           <h2 class="our-clients">Nasi klienci</h2>
           <ul class="clients">
             <li>
-              <a>
-                <div class="svg-container">
-                  <svg width="41" height="46.7">
-                    <use href="./images/icons.svg#icon-Union"></use>
-                  </svg>
-                </div>
+              <a class="clients-link svg-container">
+                <svg width="41" height="46.7">
+                  <use href="./images/icons.svg#icon-Union"></use>
+                </svg>
               </a>
             </li>
             <li>
@@ -558,11 +556,15 @@
         </div>
       </section>
     </footer>
-    <div>
-      <div>
-        <svg><use></use></svg>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button" data-modal-close>
+          <svg width="11px" height="11px">
+            <use href="./images/icons.svg#icon-x"></use>
+          </svg>
+        </button>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./modal.js"></script>
   </body>
 </html>
