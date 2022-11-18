@@ -110,7 +110,18 @@ body {
   color: #212121;
   position: relative;
 }
-.movement-links a:hover:after {
+/* .movement-links a:hover:after {
+  content: "";
+  position: absolute;
+
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  bottom: -32px;
+  left: 0;
+} */
+
+.visited-a::after {
   content: "";
   position: absolute;
 
@@ -291,6 +302,8 @@ body {
   width: 1170px;
   justify-content: space-between;
   padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .pictures-what-we-do li {
   list-style-type: none;
